@@ -253,20 +253,201 @@
 		padding-left: 10px;
 	}
 	.card {
-		width: 100vw; /* Fixed width */
+		width: 100vw;
 		height: 30vh;
 	}
 }
 
-/* Añadir un punto de quiebre para pantallas muy pequeñas */
-@media (max-width: 320px) {
+@media (min-width: 380px) and (max-width: 480px) {
 	.box {
-		padding: 0.25em;
+		padding: 0.4em;
 	}
+
 	.info-val {
-		font-size: 1.2em;
+		font-size: 1.4em;
 	}
+
+	.unit {
+		font-size: 0.9em;
+	}
+
+	.card__title__city-country {
+		font-size: 1.8em;
+	}
+
+	.title__country--and--search {
+		padding-left: 10px;
+	}
+
+	.card {
+		width: 95vw;
+		height: auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 10px;
+	}
+
+	.card__title {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-column: 1 / -1;
+	}
+
+	.card__title__temperature-now {
+		font-size: 3em;
+	}
+
+	.card__title__temperature-max,
+	.card__title__temperature-min,
+	.card__title__temperature-feels {
+		font-size: 0.8em;
+		margin-top: -5px;
+	}
+
+	.card__title__search-bar input {
+		font-size: 12px;
+		padding: 0 8px;
+	}
+
+	.card__title__search-bar button {
+		font-size: 14px;
+		padding: 0 12px;
+	}
+
+	.card__title__temperature-now {
+		white-space: nowrap;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 380px) {
+	.box {
+		padding: 0.3em;
+	}
+
+	.info-val {
+		font-size: 1.3em;
+	}
+
 	.unit {
 		font-size: 0.8em;
+	}
+
+	.card__title__city-country {
+		font-size: 1.6em;
+	}
+
+	.title__country--and--search {
+		padding-left: 8px;
+	}
+
+	.card {
+		width: 90vw;
+		height: auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 5px;
+	}
+
+	.card__title {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-column: 1 / -1;
+	}
+
+	.card__title__temperature-now {
+		font-size: 2.5em;
+	}
+
+	.card__title__temperature-max,
+	.card__title__temperature-min,
+	.card__title__temperature-feels {
+		font-size: 0.7em;
+		margin-top: -5px;
+	}
+
+	.card__title__search-bar input {
+		font-size: 11px;
+		padding: 0 6px;
+	}
+
+	.card__title__search-bar button {
+		font-size: 13px;
+		padding: 0 10px;
+	}
+
+	.card__title__temperature-now {
+		white-space: nowrap;
+	}
+}
+/* Pantalla 320 */
+@media (max-width: 320px) {
+	.box {
+		padding: 0.2em;
+	}
+
+	.info-val {
+		font-size: 1.1em;
+	}
+
+	.unit {
+		font-size: 0.7em;
+	}
+
+	.card__title__city-country {
+		font-size: 1.4em;
+	}
+
+	.title__country--and--search {
+		padding-left: 5px;
+	}
+
+	.card {
+		width: 90vw;
+		height: auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 5px;
+		padding: 0.5em;
+	}
+
+	.card__title {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-column: 1 / -1;
+	}
+
+	.card__title__temperature-now {
+		font-size: 2.2em;
+	}
+
+	.card__title__temperature-max,
+	.card__title__temperature-min,
+	.card__title__temperature-feels {
+		font-size: 0.6em;
+		margin-top: -5px;
+	}
+
+	.card__title__search-bar input {
+		font-size: 10px;
+		padding: 0 6px;
+	}
+
+	.card__title__search-bar button {
+		font-size: 12px;
+		padding: 0 8px;
+	}
+
+	.card__title__temperature-now,
+	.card__title__temperature-max,
+	.card__title__temperature-min,
+	.card__title__temperature-feels {
+		text-align: center;
+	}
+
+	.card__title__temperature-now {
+		white-space: nowrap;
 	}
 }
